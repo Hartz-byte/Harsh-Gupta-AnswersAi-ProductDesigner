@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Box, Link, Button } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
 import React from "react";
 
 import Logo from "../../Assets/Icons/logo.svg";
@@ -19,7 +19,14 @@ const Header = () => {
         }}
       >
         {/* logo and name */}
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "110px",
+          }}
+        >
           <img src={Logo} alt="logo" />
           <Typography
             variant="h6"
@@ -32,52 +39,51 @@ const Header = () => {
           </Typography>
         </Box>
 
-        {/* navbar options */}
+        {/* navbar buttons */}
         <Box sx={{ display: "flex", gap: 5 }}>
-          <Link
-            to=""
+          <Button
             style={{
-              textDecoration: "none",
+              textTransform: "none",
               color: "black",
-              fontSize: "18px",
+              fontSize: "16px",
               fontWeight: "400",
             }}
           >
             Home
-          </Link>
-          <Link
-            to=""
+          </Button>
+          <Button
             style={{
-              textDecoration: "none",
+              textTransform: "none",
               color: "black",
-              fontSize: "18px",
+              fontSize: "16px",
               fontWeight: "400",
             }}
           >
             About
-          </Link>
-          <Link
-            to=""
+          </Button>
+          <Button
             style={{
-              textDecoration: "none",
+              textTransform: "none",
               color: "black",
-              fontSize: "18px",
+              fontSize: "16px",
               fontWeight: "400",
             }}
           >
             Solutions
-          </Link>
-          <Link
-            to=""
+          </Button>
+          <Button
             style={{
-              textDecoration: "none",
-              color: "black",
-              fontSize: "18px",
+              textTransform: "none",
+              color: "white",
+              fontSize: "16px",
               fontWeight: "400",
+              border: "2px solid #6366F1",
+              padding: "10px 30px",
+              backgroundColor: "#02010C",
             }}
           >
             Contact
-          </Link>
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>
