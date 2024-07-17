@@ -29,7 +29,7 @@ export const testimonials = [
       "https://answersai.com/static/media/testimonial-shuo.03f36813bd570a37684c.png",
   },
   {
-    name: "Hubert Liu UC Berkeley TA with 200 students",
+    name: "Hubert Liu, UC Berkeley TA with 200 students",
     description:
       "It’s a life saver . Working as a Teaching Assistant at UC Berkeley’s Mechanical Engineering division, I'm constantly grading and resolving student queries about course materials that run into many hours each week. With AnswersAi, I am able to gather up information and double check my solutions much more quickly, and allows my students to get quick feedback and problem-solving support. Brilliant!",
     image:

@@ -5,7 +5,9 @@ import Logo from "../../Assets/Icons/logo.svg";
 
 const Header = () => {
   return (
-    <AppBar sx={{ backgroundColor: "#ebf4f5", boxShadow: "none" }}>
+    <AppBar
+      sx={{ backgroundColor: "#ebf4f5", boxShadow: "none", position: "static" }}
+    >
       <Toolbar
         sx={{
           display: "flex",
