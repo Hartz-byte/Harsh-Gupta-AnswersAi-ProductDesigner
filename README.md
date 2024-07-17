@@ -2,12 +2,12 @@
 
 This project is a React application showcasing a potential layout for a web application promoting AnswersAI's ClassMate product. ClassMate is a hypothetical educational support tool.
 
-## Features:
+## Specs:
 
 1. Responsive design for mobile, tablet, and desktop screens.
-2. Header component with logo, navigation buttons, and a hamburger menu for mobile navigation.
-3. Hero section with a title explaining the benefits of ClassMate. (Content placeholder)
-4. Placeholder section for additional content showcasing ClassMate's functionalities.
+2. Static educational website.
+3. Use of materialUI library.
+4. Unique design.
 
 ## Getting Started:
 1. Clone the repository: git clone [https://github.com/<your-username>/answersai-react-app.git](https://github.com/Hartz-byte/Harsh-Gupta-AnswersAi-ProductDesigner.git)
