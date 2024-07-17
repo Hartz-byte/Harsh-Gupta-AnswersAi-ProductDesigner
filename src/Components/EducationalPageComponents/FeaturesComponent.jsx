@@ -78,9 +78,7 @@ const FeaturesComponent = () => {
 
       {/* Inbuilt Plagiarism Detection */}
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box
-          sx={{ display: "flex", gap: 5, height: "450px", paddingTop: "30px" }}
-        >
+        <Box sx={{ display: "flex", gap: 5, height: "450px" }}>
           {/* text */}
           <Box
             sx={{
@@ -146,9 +144,7 @@ const FeaturesComponent = () => {
 
       {/* Saves Instructor Time for What Really Matters */}
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box
-          sx={{ display: "flex", gap: 5, height: "450px", paddingTop: "30px" }}
-        >
+        <Box sx={{ display: "flex", gap: 5, height: "450px" }}>
           {/* image */}
           <Box>
             <img
