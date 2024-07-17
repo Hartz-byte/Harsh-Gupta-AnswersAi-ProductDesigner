@@ -1,4 +1,4 @@
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 
 import pic1 from "../../Assets/Pics/pic1.png";
