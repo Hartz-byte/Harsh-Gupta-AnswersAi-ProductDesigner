@@ -1,15 +1,19 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import { useMediaQuery } from "@mui/material";
 
 import Logo from "../../Assets/Icons/logo.svg";
 
 const Footer = () => {
+  const isMobile = useMediaQuery(`(max-width: 600px)`);
+
   return (
     <Box
       sx={{
         backgroundColor: "black",
-        padding: "40px 120px",
+        padding: { xs: "30px", md: "40px 120px" },
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "space-between",
       }}
     >
@@ -52,10 +56,11 @@ const Footer = () => {
         <Typography
           style={{
             color: "white",
-            width: "400px",
+            width: isMobile ? "350px" : "400px",
             fontSize: "12px",
             marginTop: "20px",
             fontWeight: 300,
+            paddingBottom: isMobile ? "30px" : "",
           }}
         >
           AnswersAi, Corp. does not condone plagiarism or academic dishonesty.
@@ -66,16 +71,18 @@ const Footer = () => {
         </Typography>
 
         {/* bottom text */}
-        <Typography
-          style={{
-            color: "#6B7280",
-            width: "400px",
-            fontSize: "12px",
-            marginTop: "60px",
-          }}
-        >
-          © 2024 AnswersAi, Corp. All Rights Reserved.
-        </Typography>
+        {!isMobile ? (
+          <Typography
+            style={{
+              color: "#6B7280",
+              width: "400px",
+              fontSize: "12px",
+              marginTop: "60px",
+            }}
+          >
+            © 2024 AnswersAi, Corp. All Rights Reserved.
+          </Typography>
+        ) : null}
       </Box>
 
       {/* column 2, 3, and 4 */}
@@ -147,6 +154,20 @@ const Footer = () => {
           </Typography>
         </Box>
       </Box>
+
+      {/* bottom text */}
+      {isMobile ? (
+        <Typography
+          style={{
+            color: "#6B7280",
+            width: "400px",
+            fontSize: "12px",
+            marginTop: "60px",
+          }}
+        >
+          © 2024 AnswersAi, Corp. All Rights Reserved.
+        </Typography>
+      ) : null}
     </Box>
   );
 };

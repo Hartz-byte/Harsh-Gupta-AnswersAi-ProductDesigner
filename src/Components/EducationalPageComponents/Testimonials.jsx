@@ -1,10 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
+import { useMediaQuery } from "@mui/material";
 
 import { testimonials } from "../../Utils/CarouselData";
 
 const Testimonials = () => {
+  const isMobile = useMediaQuery(`(max-width: 600px)`);
+
   return (
     <Box
       sx={{
@@ -18,7 +21,7 @@ const Testimonials = () => {
           style={{
             lineHeight: "60px",
             fontWeight: "500",
-            fontSize: "50px",
+            fontSize: "45px",
             color: "#4B5563",
           }}
         >
@@ -34,7 +37,9 @@ const Testimonials = () => {
               key={index}
               sx={{
                 display: "flex",
+                flexDirection: { xs: "column", md: "row" },
                 justifyContent: "center",
+                alignItems: { xs: "center" },
               }}
             >
               {/* Image */}
@@ -58,7 +63,14 @@ const Testimonials = () => {
                   gap: 5,
                 }}
               >
-                <Typography variant="h4" color="black" fontWeight={"bold"}>
+                <Typography
+                  variant="h4"
+                  color="black"
+                  fontWeight={"bold"}
+                  fontSize={{ xs: "20px" }}
+                  display={{ xs: "flex" }}
+                  justifyContent={{ xs: "center" }}
+                >
                   {item.name}
                 </Typography>
                 <Typography variant="h6" color="white" width="800px">

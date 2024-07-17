@@ -1,9 +1,12 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
+import { useMediaQuery } from "@mui/material";
 
 import FeaturesComponent from "./FeaturesComponent";
 
 const FeaturesSection = () => {
+  const isMobile = useMediaQuery(`(max-width: 600px)`);
+
   return (
     <Box
       sx={{
@@ -18,10 +21,10 @@ const FeaturesSection = () => {
           lineHeight: "60px",
           fontWeight: "500",
           fontSize: "40px",
-          paddingTop: "30px",
+          padding: "30px 0",
         }}
       >
-        <h3 style={{ textAlign: "center" }}>
+        <Typography variant={isMobile ? "h5" : "h3"} textAlign="center">
           Leverage the power of
           <br />
           <span style={{ color: "#4B5563" }}>
@@ -29,7 +32,7 @@ const FeaturesSection = () => {
           </span>
           <br />
           <b>educational support</b>
-        </h3>
+        </Typography>
       </Box>
 
       {/* features */}
