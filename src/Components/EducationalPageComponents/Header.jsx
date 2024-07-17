@@ -5,17 +5,11 @@ import Logo from "../../Assets/Icons/logo.svg";
 
 const Header = () => {
   return (
-    <AppBar
-      // sx={{
-      //   background: "linear-gradient(to bottom, #ebf4f5 0%, #b5c6e0 100%)",
-      // }}
-      sx={{ backgroundColor: "#ebf4f5", boxShadow: "none" }}
-    >
+    <AppBar sx={{ backgroundColor: "#ebf4f5", boxShadow: "none" }}>
       <Toolbar
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          cursor: "pointer",
         }}
       >
         {/* logo and name */}
@@ -25,6 +19,7 @@ const Header = () => {
             alignItems: "center",
             justifyContent: "center",
             height: "110px",
+            cursor: "pointer",
           }}
         >
           <img src={Logo} alt="logo" />
@@ -72,14 +67,18 @@ const Header = () => {
             Solutions
           </Button>
           <Button
-            style={{
+            sx={{
               textTransform: "none",
               color: "white",
               fontSize: "16px",
-              fontWeight: "400",
+              fontWeight: "bold",
               border: "2px solid #6366F1",
               padding: "10px 30px",
               backgroundColor: "#02010C",
+              "&:hover": {
+                border: "2px solid #6366F1",
+                backgroundColor: "#02010C",
+              },
             }}
           >
             Contact
